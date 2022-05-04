@@ -14,9 +14,7 @@ body {
 }
 
 /* DEBUG */
-.free-trial .main-container {
-    background-color: coral;
-}
+
 /* COMMON */
 .flex-container {
     display: flex;
@@ -273,7 +271,6 @@ main {
 /* trial side */
 .btn-plan {
     margin-bottom: 20px;
-    
     font-size: 0.84em;
 }
 
@@ -470,4 +467,32 @@ main {
 .companies-txt p {
     margin: 40px 0;
     line-height: 1.5em;
+}
+
+/* FREE TRIAL */
+.free-trial {
+    margin-bottom: 80px;
+    padding: 7em 0;
+    background-color: #b4d0e7;
+}
+
+.free-trial > .flex-container {
+    justify-content: space-between;
+}
+
+.free-trial-left {
+    width: 50%;
+}
+
+.free-trial-right {
+    width: 30%;
+}
+
+.free-trial-right > .btn-white {
+    border: none;
+}
+
+.free-trial-left > h2 {
+    margin-bottom: 0;
+    color: #61082b;
 }
