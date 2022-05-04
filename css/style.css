@@ -6,10 +6,10 @@
 }
 
 /* TEXT RESET */
-/* 0.7REM = 12PX */
+/* 0.75REM = 12PX */
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 600;
 }
 
@@ -21,7 +21,8 @@ body {
 }
 
 .main-container {
-
+    margin: 0 auto;
+    width: 65%;
 }
 
 .sub-container {
@@ -34,6 +35,23 @@ img {
     display: block;
 }
 
+h2 {
+    font-size: 2.4em;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+.small-text {
+    font-size: 0.85em;
+}
+
 ul {
     list-style-type: none;
 }
@@ -44,17 +62,23 @@ a {
     cursor: pointer;
 }
 
+.a-classic {
+    text-decoration: underline;
+    color: #0061ff;
+    cursor: pointer;
+}
+
 .btn {
     display: inline-block;
     font-size: 1em;
 }
 
 .btn-small {
-    padding: 0.4em 1.2em;
+    padding: 0.6em 1.2em;
 }
 
 .btn-large {
-    padding: 0.5em 2em;
+    padding: 0.6em 2em;
 }
 
 .btn-blue {
@@ -68,12 +92,13 @@ a {
 
 /* HEADER */
 header {
-    padding: 0 1%;
+    padding: 0 1.5%;
     width: 100%;
-    height: 60px;
+    min-height: 60px;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
     background-color: white;
     box-shadow: 0 1px 2px grey;
 }
@@ -84,12 +109,12 @@ header * {
 
 /* HEADER NAV */
 nav {
-    height: 100%;
+    min-height: 60px;
     justify-content: space-between;
 }
 
 .col > .flex-container {
-    height: 100%;
+    min-height: 100%;
     align-items: center;
 }
 
@@ -98,11 +123,11 @@ nav {
 }
 
 .header-info li {
-    margin-right: 30px;
+    margin-right: 3em;
 }
 
 .header-user li {
-    margin-left: 30px;
+    margin-left: 3em;
 }
 
 /* MAIN */
@@ -110,22 +135,24 @@ main {
     margin-top: 60px;
 }
 
-/* jumbotron */
+/* JUMBOTRON SECTION */
 .jumbotron {
-    padding-top: 10vh;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #b4d0e7;
 }
 
 .jumbotron h1 {
-    font-size: 4.6em;
-    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 4.9em;
+}
+
+.jumbotron-content {
+    position: relative;
+    top: 70px;
 }
 
 .jumbotron-content > .flex-container {
     justify-content: space-between;
-    position: relative;
-    top: 35px;
 }
 
 .jumbo-text {
@@ -145,10 +172,140 @@ main {
     margin: 25px 0;
 }
 
-.jumbo-btn-side > div {
-    font-size: 0.9em;
+.jumbo-btn-side .btn {
+    margin-bottom: 10px;
 }
 
-.jumbo-btn-side .btn {
-    margin-bottom: 5px;
+/* BUSINESS PLANS SECTION */
+.plans > .main-container {
+    margin-top: 150px;
+}
+
+.plans .plan,
+.plans .custom-plan {
+    border: 1px solid lightgray; 
+}
+
+/* custom radio side */
+.select-plan {
+    margin-bottom: 30px;
+}
+
+.select-plan li {
+    margin-right: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.custom-radio {
+    margin-right: 0.4em;
+    width: 1.3em;
+    height: 1.3em;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+}
+
+.custom-radio:hover {
+    border: 4px solid #0061ff;
+}
+
+/* plan header */
+.plan-header {
+    padding: 0.7em 0;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+
+/* plan content */
+.plan-content {
+    padding-top: 2em;
+}
+
+/* standard plans */
+.standard-plans {
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.plan {
+    width: calc(89% / 3);
+    height: 720px;  
+}
+
+/* plan price */
+.plan-price {
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.plan-payment {
+    color: gray;
+}
+
+.plan-spec {
+    margin: 30px 0;
+}
+
+.plan-spec span {
+    margin-right: 0.3em;
+}
+
+.plan-spec li {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+/* trial side */
+.btn-plan {
+    margin-bottom: 20px;
+    padding: 0.6em 0;
+    text-align: center;
+    font-size: 0.84em;
+}
+
+.trial {
+    margin-bottom: 20px;
+}
+
+.plan-content hr {
+    margin-bottom: 30px;
+    width: 20%;
+    background-color: lightgray;
+    border: 0.5px solid lightgray;
+}
+
+/* plan benefits */
+.benefits > h4,
+.benefits li {
+    margin-bottom: 15px;
+}
+
+.benefits-list li {
+    display: flex;
+}
+
+.benefits-list span {
+    margin-right: 0.3em;
+    color: #0061ff;
+}
+
+/* custom plan */
+.custom-plan-content {
+    padding: 2em 2em 1.7em;
+}
+.custom-plan-left {
+    width: 70%;
+}
+
+.custom-plan-right {
+    width: 30%;
+}
+
+.custom-plan-left > h3 {
+    margin-bottom: 10px;
+}
+
+.custom-plan-left > h4 {
+    margin-bottom: 20px;
 }
