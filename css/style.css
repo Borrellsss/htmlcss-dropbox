@@ -99,7 +99,6 @@ hr {
 
 /* HEADER */
 header {
-    padding: 0 1.5%;
     width: 100%;
     min-height: 60px;
     position: fixed;
@@ -129,12 +128,23 @@ nav {
     width: 100px;
 }
 
-.header-info li {
-    margin-right: 3em;
+.col li {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 1.5em;
 }
 
 .header-user li {
-    margin-left: 3em;
+    padding: 0 1.5em;
+}
+
+header li:hover {
+    border-bottom: 2px solid black;
+}
+
+.col .no-border-hover:hover {
+    border-bottom: 0;
 }
 
 /* MAIN */
