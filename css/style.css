@@ -59,6 +59,10 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+a:hover {
+    color: #0061ff;
     cursor: pointer;
 }
 
@@ -93,6 +97,11 @@ a {
     background-color: white;
 }
 
+.btn-small a:hover,
+.btn-large a:hover {
+    color: inherit;
+}
+
 hr {
     border: 0.5px solid lightgray;
 }
@@ -109,18 +118,12 @@ header {
     box-shadow: 0 1px 2px grey;
 }
 
-header * {
-    vertical-align: middle;
-}
-
 /* HEADER NAV */
 nav {
-    min-height: 60px;
     justify-content: space-between;
 }
 
 .col > .flex-container {
-    min-height: 100%;
     align-items: center;
 }
 
@@ -131,20 +134,16 @@ nav {
 .col li {
     display: flex;
     align-items: center;
-    height: 60px;
-    padding: 0 1.5em;
-}
-
-.header-user li {
+    min-height: 60px;
     padding: 0 1.5em;
 }
 
 header li:hover {
-    border-bottom: 2px solid black;
+    box-shadow: 0 3px black;
 }
 
 .col .no-border-hover:hover {
-    border-bottom: 0;
+    box-shadow: none;
 }
 
 /* MAIN */
@@ -225,6 +224,7 @@ main {
     display: inline-block;
     border-radius: 50%;
     border: 1px solid lightgray;
+    cursor: pointer;
 }
 
 .custom-radio:hover {
@@ -552,6 +552,7 @@ footer {
 }
 
 .footer-nav-col li {
+    font-weight: 400;
     margin-bottom: 0.3em;
 }
 
