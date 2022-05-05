@@ -471,7 +471,6 @@ main {
 
 /* FREE TRIAL */
 .free-trial {
-    margin-bottom: 80px;
     padding: 7em 0;
     background-color: #b4d0e7;
 }
@@ -495,4 +494,31 @@ main {
 .free-trial-left > h2 {
     margin-bottom: 0;
     color: #61082b;
+}
+
+/* QUESTIONS */
+.questions {
+    margin: 100px 0;
+}
+
+/* frequent questions */
+.question-box {
+    padding: 2em 0;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+}
+
+.box-test > h2 {
+    font-size: 2.1em;
+}
+
+.question-box > span {
+    width: 10%;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.box-test .question-box:last-child {
+    border-bottom: 1px solid lightgray;
+
 }
