@@ -234,7 +234,7 @@ main {
 }
 
 /* standard plans */
-.standard-plans {
+#standard-plans {
     margin-bottom: 40px;
     justify-content: space-between;
 }
